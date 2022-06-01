@@ -1,26 +1,20 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000;
-*/
-
 html {
   background-image:
-      linear-gradient(243deg, rgba(127,255,212,.8), rgba(127,255,212,0) 50.00%),
-      linear-gradient(135deg, rgba(135,206,235,.8), rgba(135,206,235,0) 50.00%),
-      linear-gradient(351deg, rgba(221,160,221,.8), rgba(221,160,221,0) 50.00%),
+      linear-gradient(243deg, rgba(127,255,212,.75), rgba(127,255,212,0) 50.00%),
+      linear-gradient(135deg, rgba(135,206,235,.75), rgba(135,206,235,0) 50.00%),
+      linear-gradient(351deg, rgba(221,160,221,.75), rgba(221,160,221,0) 50.00%),
       url('https://media.istockphoto.com/vectors/graseby-watercolor-abstract-background-in-shades-of-grey-with-the-of-vector-id824411234?k=20&m=824411234&s=612x612&w=0&h=w9wwCiS1gk2OiV3NTfUyVjxjZwe6ISSFKbzNpjre1tA=');
+  width: 100%;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 3em;
+  font-stretch: condensed;
   font-family: 'Papyrus', sans-serif;
   font-style: bold;
   text-align: center;
@@ -29,7 +23,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2vw;
+  font-size: 2em;
   font-family: 'Papyrus', sans-serif;
   text-align: center;
 }
@@ -39,7 +33,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  font-size: 25px;
+  font-size: 1.5em;
   font-family: 'Papyrus', sans-serif;
   font-variant: small-caps;
   text-align: center;
@@ -47,8 +41,10 @@ section {
 }
 
 .select-box {
-  width: 32vw;
-  height: 20vh;
+  max-width: 36vw;
+  max-height: auto;
+  min-width: 36vh;
+  min-height: auto;
   filter: drop-shadow(0 0 0.75rem black);
   position: relative;
   margin-bottom: 50px;
@@ -63,22 +59,19 @@ section {
 
 .affirmation-message {
   text-align: center;
-  margin-right:-30%;
-  margin-bottom: 25%;
+  margin-bottom: 35%;
 }
 
 .mantra-message {
   text-align: center;
-  margin-right:-30%;
-  margin-bottom: 25%;
+  margin-left: 15%;
+  margin-bottom: 35%;
 }
 
 label {
-  font-size: 1.5vw;
+  font-size: 1em;
   text-align: center;
-  margin-right: 40px;
-  margin-left: 40%;
-  margin-bottom: 75px;
+  margin-bottom: 32%;
 }
 
 button {
@@ -86,23 +79,37 @@ button {
   font-variant: small-caps;
   text-align: center;
   filter: drop-shadow(0 0 0.33rem gray);
-  font-size: 20px;
+  font-size: 0.75em;
   border-radius: 10pt;
   position: absolute;
+  margin-bottom: 1%;
+}
 
+button:hover {
+  background-color: #FFDC68;
+  color: black;
+}
+
+button:focus {
+  background-color: #FFA7A6;
+  color: white;
 }
 
 .message-box {
   width: 45vw;
   height: 36vh;
+  max-width: 45vw;
+  max-height: 36vh;
+  min-width: 45vh;
+  min-height: 36vh;
   display: flex;
   align-items: center;
   filter: drop-shadow(0 0 0.75rem black);
 }
 
 .mediation-guy {
-  width: 15vw;
-  height: 15vh;
+  width: 5em;
+  height: 5em;
   filter: drop-shadow(0 0 0.33rem gray);
   position: absolute;
 }
