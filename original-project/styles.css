@@ -130,11 +130,6 @@ button:focus {
   filter: drop-shadow(0 0 0.33rem gray);
 }
 
-/* .recieved-message {
-  max-width: 40vw;
-  max-height: 18vh;
-} */
-
 .hidden {
   display: none;
 }
