@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <h1>⋆☽ Self Care Center ☾⋆</h1>
-    <h3>Which type of message would you like to receive?</h3>
-    <section>
-      <img class="select-box" src="https://user-images.githubusercontent.com/103063934/170392487-15597b34-7231-4ad0-9f3f-4bfe6d9f2f44.png">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <h1>⋆☽ Self Care Center ☾⋆</h1>
+  <h3>Which type of message would you like to receive?</h3>
+  <section>
+    <img class="select-box"
+      src="https://user-images.githubusercontent.com/103063934/170392487-15597b34-7231-4ad0-9f3f-4bfe6d9f2f44.png">
+    <div class="select-box-contents">
       <form class="message-selection">
-        <input class="affirmation-message" type="radio" name="choice" value="affirmation" checked="checked" />
+        <input class="affirmation-message" type="radio" name="choice"
+          value="affirmation" />
         <label>Affirmation</label>
-        <input class="mantra-message" type="radio" name="choice" value="mantra" checked="checked" />
+        <input class="mantra-message" type="radio" name="choice"
+          value="mantra" />
         <label>Mantra</label>
       </form>
+      <p class="error-message"></p>
       <button class="receive-button">Receive Message</button>
-    </section>
-    <section>
-      <img class="message-box" src="https://user-images.githubusercontent.com/103063934/170392533-4662d92f-4dba-4f99-95c5-49f28594a520.png">
+    </div>
+  </section>
+  <section>
+    <img class="message-box"
+      src="https://user-images.githubusercontent.com/103063934/170392533-4662d92f-4dba-4f99-95c5-49f28594a520.png">
+    <div class="message-contents">
+      <p class="received-message"></p>
       <img class="mediation-guy" src="./assets/meditate.svg" />
-    </section>
-    <script type="text/javascript" src="main.js"></script>
-  </body>
+      <button class="clear-button">Clear Message</button>
+    </div>
+  </section>
+  <script type="text/javascript" src="main.js"></script>
+  <script src="./affirmations-mantras.js"></script>
+</body>
+
 </html>
