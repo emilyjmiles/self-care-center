@@ -32,7 +32,7 @@ var affirmations = [
   "An apple a day keeps anyone away if you throw it hard enough.",
   "Do you know what I like about people? Their dogs and cats.",
   "Before coffee: I hate everybody. After coffee: I feel good about hating everybody."
-]
+];
 
 var mantras = [
   "Be happy. It drives people crazy.",
@@ -66,5 +66,4 @@ var mantras = [
   "Your mind is a weapon, keep it open.",
   "Too cool to give a damn.",
   "You gotta risk it to get biscuit.",
-
-]
+];

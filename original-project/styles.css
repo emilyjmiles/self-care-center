@@ -113,3 +113,7 @@ button:focus {
   filter: drop-shadow(0 0 0.33rem gray);
   position: absolute;
 }
+
+.hidden {
+  display: none;
+}
