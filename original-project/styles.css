@@ -40,38 +40,9 @@ section {
   position: relative;
 }
 
-.select-box {
-  max-width: 36vw;
-  max-height: auto;
-  min-width: 36vh;
-  min-height: auto;
-  filter: drop-shadow(0 0 0.75rem black);
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.message-selection {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  position: absolute;
-}
-
-.affirmation-message {
-  text-align: center;
-  margin-bottom: 35%;
-}
-
-.mantra-message {
-  text-align: center;
-  margin-left: 15%;
-  margin-bottom: 35%;
-}
-
 label {
   font-size: 1em;
   text-align: center;
-  margin-bottom: 32%;
 }
 
 button {
@@ -80,9 +51,7 @@ button {
   text-align: center;
   filter: drop-shadow(0 0 0.33rem gray);
   font-size: 0.75em;
-  border-radius: 10pt;
-  position: absolute;
-  margin-bottom: 1%;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -95,6 +64,47 @@ button:focus {
   color: white;
 }
 
+.select-box {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  max-width: 45vw;
+  max-height: auto;
+  min-width: 45vh;
+  min-height: auto;
+  filter: drop-shadow(0 0 0.75rem black);
+  position: relative;
+}
+
+.select-box-contents {
+  position: absolute;
+}
+
+.message-selection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.error-message {
+  font-size: 0.75em;
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.affirmation-message {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.mantra-message {
+  text-align: center;
+  margin-left: 15%;
+  margin-bottom: 5%;
+}
+
+
 .message-box {
   width: 45vw;
   height: 36vh;
@@ -105,13 +115,19 @@ button:focus {
   display: flex;
   align-items: center;
   filter: drop-shadow(0 0 0.75rem black);
+  position: relative;
+}
+
+.message-contents {
+  position: absolute;
+  max-width: 40vw;
+  max-height: 30vh;
 }
 
 .mediation-guy {
   width: 5em;
   height: 5em;
   filter: drop-shadow(0 0 0.33rem gray);
-  position: absolute;
 }
 
 .hidden {

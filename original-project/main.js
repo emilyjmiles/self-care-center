@@ -30,7 +30,7 @@ function hideElements(elements) {
 
 function displayPageLoad() {
   showElements([meditationIcon]);
-  hideElements([errorMessage, messageRecieved, clearMessageButton]);
+  hideElements([messageRecieved, clearMessageButton]);
 }
 
 function displayAffirmation() {
@@ -47,7 +47,6 @@ function validateForm() {
     errorMessage.innerHTML = 'Please select on option before submitting';
   } else {
     errorMessage.innerHTML = '';
-    hideElements([errorMessage]);
     displayMessage();
   }
 }
