@@ -13,43 +13,50 @@
 </head>
 
 <body>
-  <header>
-    <img class="logo left-logo" src="./assets/self-care-logo.webp" alt="self care logo">
-    <h1>Self Care Center</h1>
-    <img class="logo right-logo" src="./assets/self-care-logo.webp"
-      alt="self care logo">
-  </header>
-  <h3>Which type of message would you like to receive?</h3>
-  <section>
-    <img class="select-box"
-      src="./assets/selection-bg.webp">
-    <div class="select-box-contents">
-      <form class="message-selection">
-        <input class="affirmation-message" type="radio" name="choice"
-          value="affirmation" />
-        <label>Affirmation</label>
-        <input class="mantra-message" type="radio" name="choice"
-          value="mantra" />
-        <label>Mantra</label>
-      </form>
-      <p class="error-message"></p>
-      <button class="receive-button">Receive Message</button>
-    </div>
-  </section>
-  <section>
-    <img class="message-box"
-      src="./assets/message-bg.webp">
-    <div class="message-contents">
-      <img role="button" class="fav favorite-empty hidden" src="./assets/favorite-empty.webp" />
-      <img role="button" class="fav favorite-selected hidden" src="./assets/favorite-selected.webp" />
-      <p class="received-message hidden"></p>
-      <img class="mediation-guy" src="./assets/meditation-icon.webp" />
-      <div class="message-box-buttons">
-        <button class="clear-button hidden">Clear Message</button>
-        <button class="view-favorites hidden">View My Favorites</button>
+  <main>
+    <header>
+      <img class="logo left-logo" src="./assets/self-care-logo.webp" alt="self care logo">
+      <h1>Self Care Center</h1>
+      <img class="logo right-logo" src="./assets/self-care-logo.webp"
+        alt="self care logo">
+    </header>
+    <h2>Which type of message would you like to receive?</h3>
+    <section class="selection-section">
+      <img class="select-box"
+        src="./assets/selection-bg.webp">
+      <div class="select-box-contents">
+        <form class="message-selection">
+          <input class="affirmation-message" type="radio" name="choice"
+            value="affirmation" />
+          <label>Affirmation</label>
+          <input class="mantra-message" type="radio" name="choice"
+            value="mantra" />
+          <label>Mantra</label>
+        </form>
+        <p class="error-message"></p>
+        <button class="receive-button">Receive Message</button>
       </div>
-    </div>
-  </section>
+    </section>
+    <section class="message-section">
+      <img class="message-box"
+        src="./assets/message-bg.webp">
+      <div class="message-contents">
+        <img role="button" class="fav favorite-empty hidden" src="./assets/favorite-empty.webp" />
+        <img role="button" class="fav favorite-selected hidden" src="./assets/favorite-selected.webp" />
+        <p class="received-message hidden"></p>
+        <img class="mediation-guy" src="./assets/meditation-icon.webp" />
+        <div class="message-box-buttons">
+          <button class="clear-button hidden">Clear Message</button>
+          <button class="view-favorites hidden">View My Favorites</button>
+        </div>
+      </div>
+    </section>
+    <section class="favorites-view hidden">
+    </section>
+    <footer class="footer hidden">
+      <button class="home-button">Back to Home</button>
+    </footer>
+  </main>
   <script type="text/javascript" src="main.js"></script>
   <script src="./affirmations-mantras.js"></script>
 </body>
