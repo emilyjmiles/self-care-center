@@ -180,6 +180,19 @@ footer {
   max-width: 70vh;
 }
 
+.message-box-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 40vw;
+  max-width: 85vw;
+}
+
+.clear-button,
+.view-favorites {
+  margin: 1%;
+}
+
 .hidden {
   display: none;
 }
