@@ -44,7 +44,7 @@ function displayMantra() {
 function validateForm() {
   if (affirmationButton.checked === false && mantraButton.checked === false) {
     showElements([errorMessage]);
-    errorMessage.innerHTML = 'Please select on option before submitting';
+    errorMessage.innerHTML = 'Please select an option before submitting';
   } else {
     errorMessage.innerHTML = '';
     displayMessage();
