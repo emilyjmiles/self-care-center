@@ -6,31 +6,29 @@ var clearMessageButton = document.querySelector('.clear-button');
 var errorMessage = document.querySelector('.error-message');
 var meditationIcon = document.querySelector('.mediation-guy');
 var messageRecieved = document.querySelector('.received-message');
+var favButtonSection = document.querySelector('.fav-buttons');
+var emptyFavButton = document.querySelector('.favorite-empty');
+var selectedFavButton = document.querySelector('.favorite-selected');
 
 window.addEventListener('load', displayPageLoad);
 receiveMessageButton.addEventListener('click', validateForm);
 clearMessageButton.addEventListener('click', clearMessage);
-
 
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
 function showElements(elements) {
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].classList.remove('hidden');
-  }
-}
+  elements.forEach(element => element.classList.remove('hidden'));
+};
 
 function hideElements(elements) {
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].classList.add('hidden');
-  }
-}
+  elements.forEach(element => element.classList.add('hidden'));
+};
 
 function displayPageLoad() {
   showElements([meditationIcon]);
-  hideElements([messageRecieved, clearMessageButton]);
+  hideElements([messageRecieved, clearMessageButton, favButtonSection]);
 }
 
 function displayAffirmation() {
@@ -42,8 +40,7 @@ function displayMantra() {
 }
 
 function validateForm() {
-  if (affirmationButton.checked === false && mantraButton.checked === false) {
-    showElements([errorMessage]);
+  if (!affirmationButton.checked && !mantraButton.checked) {
     errorMessage.innerHTML = 'Please select on option before submitting';
   } else {
     errorMessage.innerHTML = '';
@@ -52,12 +49,12 @@ function validateForm() {
 }
 
 function displayMessage() {
-  if (affirmationButton.checked === true) {
-    showElements([messageRecieved, clearMessageButton]);
+  if (affirmationButton.checked) {
+    showElements([messageRecieved, clearMessageButton, favButtonSection]);
     hideElements([meditationIcon]);
     displayAffirmation();
-  } else if (mantraButton.checked === true) {
-    showElements([messageRecieved, clearMessageButton]);
+  } else if (mantraButton.checked) {
+    showElements([messageRecieved, clearMessageButton, favButtonSection]);
     hideElements([meditationIcon]);
     displayMantra();
   }
@@ -66,11 +63,11 @@ function displayMessage() {
 function clearMessage() {
   messageRecieved.innerHTML = '';
   showElements([meditationIcon]);
-  hideElements([messageRecieved, clearMessageButton]);
+  hideElements([messageRecieved, clearMessageButton, favButtonSection]);
 
-  if (affirmationButton.checked === true) {
+  if (affirmationButton.checked) {
     affirmationButton.checked = false;
-  } else if (mantraButton.checked === true) {
+  } else if (mantraButton.checked) {
     mantraButton.checked = false;
   }
 }
