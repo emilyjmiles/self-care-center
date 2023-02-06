@@ -40,14 +40,14 @@
     <img class="message-box"
       src="./assets/message-bg.webp">
     <div class="message-contents">
-      <div class="fav-buttons hidden">
-        <img class="fav favorite-empty" src="./assets/favorite-empty.webp" />
-        <img class="fav favorite-selected" src="./assets/favorite-selected.webp" />
-      </div>
+      <img role="button" class="fav favorite-empty hidden" src="./assets/favorite-empty.webp" />
+      <img role="button" class="fav favorite-selected hidden" src="./assets/favorite-selected.webp" />
       <p class="received-message hidden"></p>
       <img class="mediation-guy" src="./assets/meditation-icon.webp" />
-      <button class="clear-button hidden">Clear Message</button>
-      <button class="view-favorites hidden">View My Favorites</button>
+      <div class="message-box-buttons">
+        <button class="clear-button hidden">Clear Message</button>
+        <button class="view-favorites hidden">View My Favorites</button>
+      </div>
     </div>
   </section>
   <script type="text/javascript" src="main.js"></script>
