@@ -19,7 +19,7 @@ const favoritesList = [];
 
 window.addEventListener('load', displayHomePage);
 receiveMessageButton.addEventListener('click', validateForm);
-clearMessageButton.addEventListener('click', clearMessage);
+clearMessageButton.addEventListener('click', displayHomePage);
 emptyFavButton.addEventListener('click', addToFavorites);
 selectedFavButton.addEventListener('click', removeFromFavorites);
 viewFavsButton.addEventListener('click', displayFavorites);
@@ -41,6 +41,7 @@ function displayHomePage() {
   showElements([selectionBox, messageBox, meditationIcon]);
   hideElements([messageRecieved, clearMessageButton, emptyFavButton, selectedFavButton, favoritesView, footer]);
   displayViewFavsButton();
+  clearMessage();
 }
 
 function validateForm() {
@@ -105,7 +106,6 @@ function displayViewFavsButton() {
 
 function clearMessage() {
   messageRecieved.innerHTML = '';
-  displayHomePage();
 
   if (affirmationButton.checked) {
     affirmationButton.checked = false;
@@ -129,7 +129,6 @@ function getFavCards() {
 }
 
 function displayFavorites() {
-  console.log(favoritesList);
   getFavCards();
 
   showElements([favoritesView, footer]);
