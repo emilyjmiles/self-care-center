@@ -19,18 +19,9 @@
 
 ## About The Project
 
-How can I care for myself? One way is with affirmations and mantras!
-Affirmations are thoughts of positive self-empowerment, meant to assert your self-worth.
-Mantras are repetive phrases that are repeated again and again during mindfulness practices. Your challenge is to build an app that helps users remind themselves of their inherent value!
+Self Care Center is an application with a little bit of sass. Do you ever need someone to remind you you're a badass? Then this is the app for you! A user can choose between an affirmation or a mantra and will receive a random sassy message on button click. If a user likes a message they can favorite it and it will appear on their favorites page. A user can also review their favorites and remove them if they decide that message is just too sassy for them.
 
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-#### Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
+This was a solo project to gain experience building an application from scratch that utilizes HTML, CSS and JavaScript and to better understand how to listen to and respond to user events.
 
 The project specs can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html)
 
@@ -57,8 +48,6 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 | Refactored Project Desktop Accessibility Rating Using Lighthouse: | Refactored Project Mobile Accessibility Rating Using Lighthouse: |
 |-------------------------------------------------------------------|------------------------------------------------------------------|
 <img width="488" alt="Screenshot 2023-02-06 at 11 36 13 PM" src="https://user-images.githubusercontent.com/103063934/217167509-ab5da142-02b5-472b-931a-2c47e81dcc71.png">|<img width="488" alt="Screenshot 2023-02-06 at 11 37 11 PM" src="https://user-images.githubusercontent.com/103063934/217167543-7f4e2fc3-9c95-412f-b337-d72e682b721c.png">
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,9 +115,13 @@ Future Refactoring Iterations:
 
 ## Reflections
 
+This project was my first adventure into writing HTML and CSS, along with continuing to grow my JavaScript skills. I loved getting the chance to be creative and play with the aesthetics of an application while also making an app functional.
+
 ### Wins:
+- Allowing myself to have fun and be creative while also utilizing my problem solving skills.
 
 ### Challenges:
+- Getting overly excited and hyper-focused on styling, that functionality was not my top priority (a great lesson for all future projects!).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
