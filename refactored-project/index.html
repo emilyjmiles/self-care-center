@@ -10,42 +10,92 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
   </style>
+  <title>Self Care Center</title>
 </head>
 
 <body>
   <main>
     <header class="flex">
-      <img class="logo left-logo" src="./assets/self-care-logo.webp" alt="self care logo">
+      <img 
+        class="logo left-logo" 
+        src="./assets/self-care-logo.webp" 
+        alt="self care logo"
+        width="375px" 
+        height="325px"
+      >
       <h1 class="align">Self Care Center</h1>
-      <img class="logo right-logo" src="./assets/self-care-logo.webp"
-        alt="self care logo">
+      <img 
+        class="logo right-logo" 
+        src="./assets/self-care-logo.webp"
+        alt="self care logo" 
+        width="375px" 
+        height="325px"
+        >
     </header>
     <h2 class="text which-message">Which type of message would you like to receive?</h3>
     <h2 class="text no-fav-message hidden">You have no saved messages!</h3>
     <section class="flex selection-section">
-      <img class="select-box"
-        src="./assets/selection-bg.webp">
+      <img 
+        class="select-box"
+        src="./assets/selection-bg.webp" 
+        alt="selection box background"
+        width="500px"
+        height="300px"
+      >
       <div class="select-box-contents">
         <form class="message-selection">
-          <input class="message affirmation" type="radio" name="choice"
-            value="affirmation" />
-          <label class="text">Affirmation</label>
-          <input class="message mantra" type="radio" name="choice"
-            value="mantra" />
-          <label class="text">Mantra</label>
+          <input 
+            class="message affirmation" 
+            type="radio" 
+            name="affirmation"
+            value="affirmation" 
+          />
+          <label for="affirmation" class="text">Affirmation</label>
+          <input 
+            class="message mantra" 
+            type="radio" 
+            name="mantra"
+            value="mantra" 
+          />
+          <label for="mantra" class="text">Mantra</label>
         </form>
         <p class="message error-message"></p>
         <button class="align receive-button">Receive Message</button>
       </div>
     </section>
     <section class="flex message-section">
-      <img class="message-box"
-        src="./assets/message-bg.webp">
+      <img 
+        class="message-box" 
+        src="./assets/message-bg.webp" 
+        alt="message box background"
+        width="700px"
+        height="400px"
+      >
       <div class="flex message-contents">
-        <img role="button" class="fav favorite-empty hidden" src="./assets/favorite-empty.webp" />
-        <img role="button" class="fav favorite-selected hidden" src="./assets/favorite-selected.webp" />
+        <img 
+          role="button" 
+          class="fav favorite-empty hidden" 
+          src="./assets/favorite-empty.webp" 
+          alt="favorite button empty" 
+          width="100px" 
+          height="100px"
+        >
+        <img 
+          role="button" 
+          class="fav favorite-selected hidden" 
+          src="./assets/favorite-selected.webp" 
+          alt="favorite button selected" 
+          width="100px" 
+          height="100px"
+        >
         <p class="text received-message hidden"></p>
-        <img class="mediation-guy" src="./assets/meditation-icon.webp" />
+        <img 
+          class="mediation-guy" 
+          src="./assets/meditation-icon.webp" 
+          alt="meditation skeleton" 
+          width="375px" 
+          height="325px"
+        >
         <div class="flex message-box-buttons">
           <button class="align clear-button hidden">Clear Message</button>
           <button class="align view-favorites hidden">View My Favorites</button>

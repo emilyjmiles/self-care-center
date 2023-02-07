@@ -121,12 +121,26 @@ function getFavCards() {
   favoritesList.forEach((fav, index) => {
     favoritesView.innerHTML +=
       `<section class="flex fav-card" id="${index}">
-      <img class="fav-card-bg" src="./assets/selection-bg.webp">
-      <div class="fav-card-contents">
-        <h3 class="text">${fav}</h3>
-        <img role="button" class="fav favorite-selected" src="./assets/favorite-selected.webp" onclick="removeFavCard()"/>
-      </div>
-    </section>`;
+        <img 
+          class="fav-card-bg" 
+          src="./assets/selection-bg.webp"
+          alt="favorite card background"
+          width="500px"
+          height="300px"
+        >
+        <div class="fav-card-contents">
+          <h3 class="text">${fav}</h3>
+          <img 
+            role="button" 
+            class="fav favorite-selected" 
+            src="./assets/favorite-selected.webp" 
+            alt="favorite button selected" 
+            width="100px" 
+            height="100px" 
+            onclick="removeFavCard()"
+          >
+        </div>
+      </section>`;
   });
 }
 
