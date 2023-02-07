@@ -91,15 +91,16 @@ https://user-images.githubusercontent.com/103063934/217107900-05ce52f4-5760-4127
 Future Iterations:
 
 - [x] Implement functionality for form validation.
-- [x] Add functionality to favorite and unfavorite messages
-- [x] Add a favorites view
+- [x] Add a favorites view.
+- [x] Add functionality to favorite and unfavorite messages.
+- [x] Add message when there are no favorites to be displayed.
 - [x] Refactor all styling to improve the UI/UX.
 - [x] Make fully responsive.
 - [ ] Refactor html for accessibility.
 
 Refactored Project Run Through:
 
-https://user-images.githubusercontent.com/103063934/217107870-f033b366-a085-457c-8c2c-ac9519100133.mp4
+https://user-images.githubusercontent.com/103063934/217158159-3e4e92b2-3e68-4555-af1f-20d0542f20f4.mp4
 
 Future Refactoring Iterations:
 
