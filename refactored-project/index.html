@@ -14,47 +14,48 @@
 
 <body>
   <main>
-    <header>
+    <header class="flex">
       <img class="logo left-logo" src="./assets/self-care-logo.webp" alt="self care logo">
-      <h1>Self Care Center</h1>
+      <h1 class="align">Self Care Center</h1>
       <img class="logo right-logo" src="./assets/self-care-logo.webp"
         alt="self care logo">
     </header>
-    <h2>Which type of message would you like to receive?</h3>
-    <section class="selection-section">
+    <h2 class="text which-message">Which type of message would you like to receive?</h3>
+    <h2 class="text no-fav-message hidden">You have no saved messages!</h3>
+    <section class="flex selection-section">
       <img class="select-box"
         src="./assets/selection-bg.webp">
       <div class="select-box-contents">
         <form class="message-selection">
-          <input class="affirmation-message" type="radio" name="choice"
+          <input class="message affirmation" type="radio" name="choice"
             value="affirmation" />
-          <label>Affirmation</label>
-          <input class="mantra-message" type="radio" name="choice"
+          <label class="text">Affirmation</label>
+          <input class="message mantra" type="radio" name="choice"
             value="mantra" />
-          <label>Mantra</label>
+          <label class="text">Mantra</label>
         </form>
-        <p class="error-message"></p>
-        <button class="receive-button">Receive Message</button>
+        <p class="message error-message"></p>
+        <button class="align receive-button">Receive Message</button>
       </div>
     </section>
-    <section class="message-section">
+    <section class="flex message-section">
       <img class="message-box"
         src="./assets/message-bg.webp">
-      <div class="message-contents">
+      <div class="flex message-contents">
         <img role="button" class="fav favorite-empty hidden" src="./assets/favorite-empty.webp" />
         <img role="button" class="fav favorite-selected hidden" src="./assets/favorite-selected.webp" />
-        <p class="received-message hidden"></p>
+        <p class="text received-message hidden"></p>
         <img class="mediation-guy" src="./assets/meditation-icon.webp" />
-        <div class="message-box-buttons">
-          <button class="clear-button hidden">Clear Message</button>
-          <button class="view-favorites hidden">View My Favorites</button>
+        <div class="flex message-box-buttons">
+          <button class="align clear-button hidden">Clear Message</button>
+          <button class="align view-favorites hidden">View My Favorites</button>
         </div>
       </div>
     </section>
-    <section class="favorites-view hidden">
+    <section class="flex favorites-view hidden">
     </section>
-    <footer class="footer hidden">
-      <button class="home-button">Back to Home</button>
+    <footer class="flex footer hidden">
+      <button class="align home-button">Back to Home</button>
     </footer>
   </main>
   <script type="text/javascript" src="main.js"></script>

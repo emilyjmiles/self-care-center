@@ -1,5 +1,5 @@
-const affirmationButton = document.querySelector('.affirmation-message');
-const mantraButton = document.querySelector('.mantra-message');
+const affirmationButton = document.querySelector('.affirmation');
+const mantraButton = document.querySelector('.mantra');
 const receiveMessageButton = document.querySelector('.receive-button');
 const clearMessageButton = document.querySelector('.clear-button');
 const emptyFavButton = document.querySelector('.favorite-empty');
@@ -7,12 +7,14 @@ const selectedFavButton = document.querySelector('.favorite-selected');
 const viewFavsButton = document.querySelector('.view-favorites');
 const backHomeButton = document.querySelector('.home-button');
 
+const whichMessage = document.querySelector('.which-message');
 const errorMessage = document.querySelector('.error-message');
 const meditationIcon = document.querySelector('.mediation-guy');
 const messageRecieved = document.querySelector('.received-message');
 const selectionBox = document.querySelector('.selection-section');
 const messageBox = document.querySelector('.message-section');
 const favoritesView = document.querySelector('.favorites-view');
+const noFavorites = document.querySelector('.no-fav-message');
 const footer = document.querySelector('.footer');
 
 const favoritesList = [];
@@ -38,9 +40,8 @@ function hideElements(elements) {
 }
 
 function displayHomePage() {
-  showElements([selectionBox, messageBox, meditationIcon]);
-  hideElements([messageRecieved, clearMessageButton, emptyFavButton, selectedFavButton, favoritesView, footer]);
-  displayViewFavsButton();
+  showElements([selectionBox, whichMessage, messageBox, meditationIcon]);
+  hideElements([noFavorites, messageRecieved, clearMessageButton, emptyFavButton, selectedFavButton, favoritesView, footer]);
   clearMessage();
 }
 
@@ -106,6 +107,7 @@ function displayViewFavsButton() {
 
 function clearMessage() {
   messageRecieved.innerHTML = '';
+  displayViewFavsButton();
 
   if (affirmationButton.checked) {
     affirmationButton.checked = false;
@@ -118,10 +120,10 @@ function getFavCards() {
   favoritesView.innerHTML = '';
   favoritesList.forEach((fav, index) => {
     favoritesView.innerHTML +=
-      `<section class="fav-card" id="${index}">
+      `<section class="flex fav-card" id="${index}">
       <img class="fav-card-bg" src="./assets/selection-bg.webp">
       <div class="fav-card-contents">
-        <h3>${fav}</h3>
+        <h3 class="text">${fav}</h3>
         <img role="button" class="fav favorite-selected" src="./assets/favorite-selected.webp" onclick="removeFavCard()"/>
       </div>
     </section>`;
@@ -129,14 +131,17 @@ function getFavCards() {
 }
 
 function displayFavorites() {
-  getFavCards();
-
   showElements([favoritesView, footer]);
-  hideElements([selectionBox, messageBox]);
+  hideElements([whichMessage, selectionBox, messageBox]);
+
+  if (!favoritesList.length) {
+    showElements([noFavorites]);
+  }
+  getFavCards();
 }
 
 function removeFavCard() {
   const card = event.target.closest('section');
   favoritesList.splice(card.id, 1);
-  getFavCards();
+  displayFavorites();
 }
