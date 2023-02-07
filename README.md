@@ -56,6 +56,8 @@ The project specs can be found [here](https://frontend.turing.edu/projects/modul
 
 | Refactored Project Desktop Accessibility Rating Using Lighthouse: | Refactored Project Mobile Accessibility Rating Using Lighthouse: |
 |-------------------------------------------------------------------|------------------------------------------------------------------|
+<img width="488" alt="Screenshot 2023-02-06 at 11 36 13 PM" src="https://user-images.githubusercontent.com/103063934/217167509-ab5da142-02b5-472b-931a-2c47e81dcc71.png">|<img width="488" alt="Screenshot 2023-02-06 at 11 37 11 PM" src="https://user-images.githubusercontent.com/103063934/217167543-7f4e2fc3-9c95-412f-b337-d72e682b721c.png">
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,7 +98,7 @@ Future Iterations:
 - [x] Add message when there are no favorites to be displayed.
 - [x] Refactor all styling to improve the UI/UX.
 - [x] Make fully responsive.
-- [ ] Refactor html for accessibility.
+- [x] Refactor html for accessibility.
 
 Refactored Project Run Through:
 
@@ -113,10 +115,10 @@ Future Refactoring Iterations:
 ## Contact
 
 ![Contributors][contributors-shield]
-
-<table align="left">
-    <td align="center"> Emily Miles: <a href="https://github.com/emilyjmiles">GitHub</a> | <a href="https://www.linkedin.com/in/emilyjmiles/">LinkedIn</a></td>
+<table align="center"> 
+  <tr> Emily Miles: <a href="https://github.com/emilyjmiles">GitHub</a> | <a href="https://www.linkedin.com/in/emilyjmiles/">LinkedIn</a> </tr>
 </table>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
