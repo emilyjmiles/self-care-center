@@ -34,7 +34,7 @@ This Solo Challenge gives students and instructors the opportunity to get a puls
 
 The project specs can be found [here](https://frontend.turing.edu/projects/module-1/self-care-center.html)
 
-[Click here to explore the refactored site!]()
+[Click here to explore the refactored site!](https://self-care-center.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
