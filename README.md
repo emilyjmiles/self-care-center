@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 
-<p align="center"><img width="900" alt="Screenshot 2023-02-04 at 11 31 31 AM" src=""></p>
-
+<p align="center"><img width="750" alt="self-care-GH" src="https://user-images.githubusercontent.com/103063934/217103417-6d0aaf3c-fa19-4d98-9c77-0436e487c7d6.png"></p>
 
 ## Table of Contents
 
@@ -87,17 +86,20 @@ You can find the project [here](https://github.com/emilyjmiles/self-care-center)
 
 Original Project Run Through:
 
+https://user-images.githubusercontent.com/103063934/217107900-05ce52f4-5760-4127-abd6-62d13fe3622c.mp4
 
 Future Iterations:
 
-- [ ] Implement functionality for form validation.
-- [ ] Add a message on the saved covers view for when a user has no covers saved covers.
-- [ ] Refactor all styling to improve the UI/UX.
-- [ ] Make fully responsive.
+- [x] Implement functionality for form validation.
+- [x] Add functionality to favorite and unfavorite messages
+- [x] Add a favorites view
+- [x] Refactor all styling to improve the UI/UX.
+- [x] Make fully responsive.
 - [ ] Refactor html for accessibility.
 
 Refactored Project Run Through:
 
+https://user-images.githubusercontent.com/103063934/217107870-f033b366-a085-457c-8c2c-ac9519100133.mp4
 
 Future Refactoring Iterations:
 
