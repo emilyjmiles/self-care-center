@@ -103,9 +103,14 @@ Future Refactoring Iterations:
 
 ## Contact
 
+### Original and Refactored Project Team
 ![Contributors][contributors-shield]
-<table align="center"> 
-  <tr> Emily Miles: <a href="https://github.com/emilyjmiles">GitHub</a> | <a href="https://www.linkedin.com/in/emilyjmiles/">LinkedIn</a> </tr>
+
+<table align="center">
+  <tr>
+    <td align="center"> Emily Miles </td>
+  </tr>
+  <td align="center"> <a href="https://github.com/emilyjmiles">GitHub</a> | <a href="https://www.linkedin.com/in/emilyjmiles/">LinkedIn</a> </tr>
 </table>
 
 
